@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('It_Girl');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 192, 203, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Section Specific Styles */
+.home .content h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    color: white;
+}
+
+.home .content p {
+    font-size: 18px;
+    color: white;
+}
+
+.about p {
+    font-size: 16px;
+    color: #333;
+}
+.about video {
+    width: 250px;
+	height: auto; /* Adjust the width as needed */
+    display: block;
+    margin: 0 auto; /* Center the video horizontally */
+}
+
+
+.education table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.education th, .education td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.education th {
+    background-color: #f2f2f2;
+}
+
+/* Skills Section Styles */
+.skills .skill {
+    margin-bottom: 15px;
+}
+
+.skills .skill h3 {
+    margin-bottom: 5px;
+}
+
+.skills .skill .progress {
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skills .skill .progress-bar {
+    height: 100%;
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+}
+
+.skills .skill .progress-bar.bg-success { width: 80%; background-color: #28a745; }
+.skills .skill .progress-bar.bg-info { width: 70%; background-color: #17a2b8; }
+.skills .skill .progress-bar.bg-warning { width: 80%; background-color: #ffc107; }
+.skills .skill .progress-bar.bg-danger { width: 90%; background-color: #dc3545; }
+.skills .skill .progress-bar.bg-primary { width: 65%; background-color: #007bff; }
+
+/* Hobbies Section Styles */
+.hobbies .hobby-item {
+    margin-bottom: 20px;
+}
+
+.hobbies .hobby-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hobbies .hobby-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Photo Section Styles */
+.photo .photo-image img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.photo .img-fluid {
+    width: 250px; /* Make sure the images scale properly within their container */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    margin-bottom: 15px; /* Add space between the images */
+}
+
+/* Contact Section Styles */
+/* Contact Section Styles */
+.contact {
+    padding: 40px 20px;
+    background-color: rgba(255, 192, 203, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact label {
+    font-size: 14px;
+    color: #333;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Social Links Styles */
+.social-links a {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.social-links i {
+    margin: 0 10px;
+}
+
+
+/* Portfolio Section Styles */
+#portfolio {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.portfolio-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-card {
+    width: 30%;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-card:hover {
+    transform: scale(1.05);
+}
+
+/* Utility Styles */
+.text-center {
+    text-align: center;
+}
+.text-white {
+    color: white;
+}
+.bg-dark {
+    background-color: #333 !important;
+}
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+.bg-success {
+    background-color: #28a745 !important;
+}
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+.bg-warning {
+    background-color: #ffc107 !important;
+}
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+.bg-primary {
+    background-color: #007bff !important;
+}
